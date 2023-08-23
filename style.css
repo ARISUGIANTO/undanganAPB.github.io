@@ -17,7 +17,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(img/anniv.jpg);
+    background-image: url(img/anniv2.jpg);
     z-index: -1;
     background-position: center;
     background-size: cover;
@@ -134,7 +134,8 @@ body {
 }
 
 .info {
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
+    background-image: url(img/bg-info.jpg);
     background-size: cover;
     min-height: 100vh;
     color: white;
@@ -312,10 +313,12 @@ body {
 }
 
 .rsvp {
-    background-color:var(--bg);
+    /* background-color:var(--bg); */
+    background-image: url(img/bg-rsvp3.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
-
+    padding-top: 4rem;
 }
 
 .rsvp h2 {
@@ -323,11 +326,11 @@ body {
 }
 
 .rsvp p {
-    color: #fff;
+    color:var(--bg);
 }
 
 .rsvp form label {
-  color: white;  
+  color:var(--bg);  
 }
 
 .rsvp button {
@@ -442,6 +445,19 @@ footer li {
         font-size: 60%;
     }
     
+    .hero::before {
+        background-image: url(img/phone.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rsvp {
+        background-image: url(img/phone-rsvp.jpg);
+        background-size: cover;
+        background-position: center;
+    }
     .simply-countdown>.simply-section {
             padding: 35px;
             margin: 2px;
