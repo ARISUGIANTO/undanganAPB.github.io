@@ -133,6 +133,158 @@ body {
     font-weight: bold;
 }
 
+
+.home .sosmed {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background: lightgrey;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 1s ease-in-out;
+  }
+  
+.home .background {
+    position: absolute;
+    inset: 0;
+    background:#e95016;
+  }
+  
+.home .logo {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    transition: all 0.6s ease-in-out;
+  }
+  
+.home .logo .logo-svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+  }
+  
+.home .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  
+.home .icon .svg {
+    fill: rgba(255, 255, 255, 0.797);
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+.home .box {
+    position: absolute;
+    padding: 10px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.389);
+    border-top: 2px solid #fcfcfb;
+    border-right: 1px solid white;
+    border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+    box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+    transform-origin: bottom left;
+    transition: all 1s ease-in-out;
+  }
+  
+.home .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+.home .box:hover .svg {
+    fill: white;
+  }
+  
+.home .box1 {
+    width: 70%;
+    height: 70%;
+    bottom: -70%;
+    left: -70%;
+  }
+  
+.home .box1::before {
+    background: radial-gradient(circle at 30% 107%, #dfcf1f 0%, #F8DE22 5%, #F94C10 60%, #FD8D14 90%);
+  }
+  
+.home .box1:hover::before {
+    opacity: 1;
+  }
+  
+.home .box1:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+.home .box2 {
+    width: 50%;
+    height: 50%;
+    bottom: -50%;
+    left: -50%;
+    transition-delay: 0.2s;
+  }
+  
+.home .box2::before {
+    background: radial-gradient(circle at 30% 107%, #F29727 0%, #F2BE22 90%);
+  }
+  
+.home .box2:hover::before {
+    opacity: 1;
+  }
+  
+.home .box2:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+.home .box3 {
+    width: 30%;
+    height: 30%;
+    bottom: -30%;
+    left: -30%;
+    transition-delay: 0.4s;
+  }
+  
+.home .box3::before {
+    background: radial-gradient(circle at 30% 107%, #d4876b 0%, #f77e53 90%);
+  }
+  
+.home .box3:hover::before {
+    opacity: 1;
+  }
+  
+.home .box3:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+.home .box4 {
+    width: 10%;
+    height: 10%;
+    bottom: -10%;
+    left: -10%;
+    transition-delay: 0.6s;
+  }
+  
+.home .sosmed:hover {
+    transform: scale(1.1);
+  }
+  
+.home .sosmed:hover .box {
+    bottom: -1px;
+    left: -1px;
+  }
+  
+.home .sosmed:hover .logo {
+    transform: translate(0, 0);
+    bottom: 20px;
+    right: 20px;
+  }
+
 .info {
     /* background-color: var(--bg); */
     background-image: url(img/bg-info.jpg);
@@ -312,6 +464,23 @@ body {
     background-color: #cecdcd;
 }
 
+.gallery .kartu a{
+  color: white;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#FD8D14, #FFE17B) border-box;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transform-origin: right bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.gallery .kartu a:hover {
+    rotate: 8deg;
+}
+
 .rsvp {
     /* background-color:var(--bg); */
     background-image: url(img/bg-rsvp3.jpg);
@@ -437,6 +606,9 @@ footer li {
        height: 130px;
     }
 }
+
+
+
 
 
 /* mobile phone */
