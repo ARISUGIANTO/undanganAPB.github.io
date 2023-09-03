@@ -285,13 +285,27 @@ body {
     background-size: cover;
     min-height: 100vh;
     color: white;
-    padding-top: 6rem;
+    padding-top: 4.5rem;
     padding-bottom: 5rem;
 }
 
 .info .alamat {
     font-size: 1.1rem;
 }
+
+.info a {
+    color: var(--orange);
+    background-color: white;
+    box-shadow: var(--shadow);
+    margin-bottom:1rem;
+}
+
+.info a:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+   
 
 .info .deskripsi {
     font-size: 0.9rem;
