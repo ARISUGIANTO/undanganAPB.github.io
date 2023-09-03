@@ -137,8 +137,8 @@ body {
 
 .home .sosmed {
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 175px;
+    height: 175px;
     background: lightgrey;
     border-radius: 100%;
     overflow: hidden;
@@ -168,8 +168,8 @@ body {
   
 .home .icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
   
 .home .icon .svg {
@@ -180,7 +180,7 @@ body {
   
 .home .box {
     position: absolute;
-    padding: 10px;
+    padding: 6px;
     text-align: right;
     background: rgba(255, 255, 255, 0.389);
     border-top: 2px solid #fcfcfb;
@@ -225,10 +225,10 @@ body {
   }
   
 .home .box2 {
-    width: 50%;
-    height: 50%;
-    bottom: -50%;
-    left: -50%;
+    width: 52%;
+    height: 52%;
+    bottom: -52%;
+    left: -52%;
     transition-delay: 0.2s;
   }
   
@@ -245,10 +245,10 @@ body {
   }
   
 .home .box3 {
-    width: 30%;
-    height: 30%;
-    bottom: -30%;
-    left: -30%;
+    width: 32%;
+    height: 32%;
+    bottom: -32%;
+    left: -32%;
     transition-delay: 0.4s;
   }
   
@@ -262,14 +262,6 @@ body {
   
 .home .box3:hover .icon .svg {
     filter: drop-shadow(0 0 5px white);
-  }
-  
-.home .box4 {
-    width: 10%;
-    height: 10%;
-    bottom: -10%;
-    left: -10%;
-    transition-delay: 0.6s;
   }
   
 .home .sosmed:hover {
@@ -484,11 +476,11 @@ body {
 }
 
 .rsvp {
-    /* background-color:var(--bg); */
-    background-image: url(img/bg-rsvp3.jpg);
+    background-color:var(--bg);
+    /* background-image: url(img/bg-rsvp3.jpg);
     background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-position: center; */
+    /* height: 100vh; */
     padding-top: 4rem;
 }
 
@@ -497,24 +489,13 @@ body {
 }
 
 .rsvp p {
-    color:var(--bg);
+    color:white;
 }
 
 .rsvp form label {
   color:var(--bg);  
 }
 
-/* .rsvp button {
-    background-color: var(--orange);
-    color: white;
-    border: 1px solid var(--orange);
-    
-}
-.rsvp button:hover {
-    background-color: white;
-    color: var(--orange);
-    border: 1px solid white;
-} */
 
 
 .rsvp button {
@@ -669,6 +650,8 @@ body {
   }
 
 
+
+
 footer {
     padding: 1rem;
     background-color: var(--orange);
@@ -689,6 +672,35 @@ footer li {
     list-style: none;
     display: inline;
     margin: 0.5rem;
+}
+
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2.5rem;
+    cursor: pointer;
+    color: var(--orange);
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Media Query */
@@ -785,12 +797,19 @@ footer li {
         position: relative;
         
       }
+    
+    .home .icon {
+        width: 18px;
+        height: 18px;
+      }
 
-    .rsvp {
-        background-image: url(img/phone-rsvp.jpg);
-        background-size: cover;
-        background-position: center;
-    }
+      .home .box {
+    
+        padding: 4px;
+        
+        
+      }
+
     .simply-countdown>.simply-section {
             padding: 35px;
             margin: 2px;
@@ -814,4 +833,5 @@ footer li {
         .timeline li .timeline-panel::after {
             top: 31px;
         }
+
 }
